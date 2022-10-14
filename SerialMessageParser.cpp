@@ -217,7 +217,10 @@ public:
 int main()
 {
     SerialMessageParser myParserInstance;
-    myParserInstance.ParseMessage();
+    while(true)
+    {
+        myParserInstance.ParseMessage();
+    }   
 
     return 0;
 }
